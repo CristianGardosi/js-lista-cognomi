@@ -17,14 +17,15 @@ listaCognomi.push(cognome);
 listaCognomi.sort();
 console.log(listaCognomi);
 
+var items = ''
+
 for (var i = 0; i < listaCognomi.length; i++){
     var item = listaCognomi[i];
 
-    var existingSurname = document.getElementById('surname-list').innerHTML;
-
-    document.getElementById('surname-list').innerHTML = existingSurname + '<li>' + item + '</li>'
+    items += '<li>' + item + '</li>';
 }
 
+document.getElementById('surname-list').innerHTML = items;
 
 
 
