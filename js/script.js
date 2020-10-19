@@ -25,6 +25,11 @@ for (var i = 0; i < listaCognomi.length; i++){
     items += '<li>' + item + '</li>';
 }
 
+// Cercare la posizione di un elemento all'interno dell'array utilizzando i numeri umani (partendo da 1 anzichè da 0)
+var indiceCognome = listaCognomi.indexOf('') + 1;
+console.log( 'La posizione nella lista del cognome cercato corrisponde al numero: ' + indiceCognome);
+
+
 document.getElementById('surname-list').innerHTML = items;
 
 
