@@ -5,7 +5,7 @@
 // scrivi anche la posizione "umana" della lista in cui il nuovo utente si trova
 
 // Array con cognomi inseriti
-var listaCognomi = [ 'bianchi', 'rossi', 'duzioni', 'balsamo', 'giorgini', ];
+var listaCognomi = [ 'bianchi', 'rossi', 'duzioni', 'balsano', 'giorgini', ];
 
 // Prompt per inserimento cognome utente
 var cognome = prompt('Inserisci il tuo cognome').toLowerCase();
@@ -16,6 +16,14 @@ listaCognomi.push(cognome);
 // Ordinamento alfabetico dell'array comprensivo del cognome inserito dall'utente
 listaCognomi.sort();
 console.log(listaCognomi);
+
+for (var i = 0; i < listaCognomi.length; i++){
+    var item = listaCognomi[i];
+
+    var existingSurname = document.getElementById('surname-list').innerHTML;
+
+    document.getElementById('surname-list').innerHTML = existingSurname + '<li>' + item + '</li>'
+}
 
 
 

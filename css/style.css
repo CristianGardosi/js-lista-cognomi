@@ -1,0 +1,21 @@
+body {
+    display: flex;
+    background: #324344;
+    color: #fff;
+    
+}
+
+h2{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li{
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 700;
+}
